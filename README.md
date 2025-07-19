@@ -30,3 +30,12 @@ The generated boarding order would be:
 | 1   | 103        | Highest row (20) and a window seat (highest priority). |
 | 2   | 101        | Highest row (20) but an aisle seat (lower priority).   |
 | 3   | 102        | Lower row (19).                                  |
+
+
+
+SCREENSHOTS
+
+<img width="1838" height="933" alt="image" src="https://github.com/user-attachments/assets/335b7ade-3581-446b-8a68-c0b5eb27eb4a" />
+<img width="814" height="858" alt="image" src="https://github.com/user-attachments/assets/5164ec32-254c-4b8a-80e2-18ccc352ca93" />
+
+
