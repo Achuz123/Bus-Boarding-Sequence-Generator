@@ -31,7 +31,19 @@ The generated boarding order would be:
 | 2   | 101        | Highest row (20) but an aisle seat (lower priority).   |
 | 3   | 102        | Lower row (19).                                  |
 
-
+CODE FOR THE LOGIC 
+.sort((a, b) => {
+      // 1. Sort by row in DESCENDING order (back of bus first).
+      if (a.sortKey.row !== b.sortKey.row) {
+        return b.sortKey.row - a.sortKey.row;
+      }
+      // 2. If rows are the same, sort by seat priority in ASCENDING order (window seats first).
+      if (a.sortKey.priority !== b.sortKey.priority) {
+        return a.sortKey.priority - b.sortKey.priority;
+      }
+      // 3. If everything else is a tie, sort by booking ID in ASCENDING order.
+      return a.id - b.id;
+    })
 
 SCREENSHOTS
 
